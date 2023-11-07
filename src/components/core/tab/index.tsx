@@ -1,6 +1,6 @@
 'use client';
 
-import { UserCircle2, Swords, Trophy } from 'lucide-react';
+import { Swords, Trophy } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
@@ -26,11 +26,6 @@ export const Tab = () => {
       path: ['/ranking'],
       title: 'Ranking',
       icon: <Trophy {...props} />,
-    },
-    {
-      path: ['/me'],
-      title: 'Conta',
-      icon: <UserCircle2 {...props} />,
     },
   ];
 

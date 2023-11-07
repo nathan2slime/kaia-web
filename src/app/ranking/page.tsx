@@ -9,7 +9,7 @@ const Ranking = async () => {
 
   return (
     <div className={style.wrapper()}>
-      {data.length > 2 && (
+      {(
         <table className={style.table()}>
           <thead className={style.thead()}>
             <th className={style.th()}>Ranking</th>
