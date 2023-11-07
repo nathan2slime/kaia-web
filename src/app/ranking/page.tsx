@@ -1,15 +1,24 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+
 import { getRanking } from '@/services/ranking.services';
+import { QuizType } from '@/types/quiz.types';
 
 import { styles } from './styles';
 
-const Ranking = async () => {
-  const { data } = await getRanking();
+const Ranking = () => {
+  const [data, setData] = useState<QuizType[]>([]);
+
+  useEffect(() => {
+    getRanking().then(res => setData(res.data));
+  }, []);
 
   const style = styles();
 
   return (
     <div className={style.wrapper()}>
-      {(
+      {
         <table className={style.table()}>
           <thead className={style.thead()}>
             <th className={style.th()}>Ranking</th>
@@ -30,7 +39,7 @@ const Ranking = async () => {
             })}
           </tbody>
         </table>
-      )}
+      }
     </div>
   );
 };
