@@ -1,0 +1,42 @@
+{
+  "name": "ultron",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "next": "13.5.6",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@hookform/resolvers": "^3.3.2",
+    "@types/debug": "^4",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "axios": "^1.5.1",
+    "classnames": "^2.3.2",
+    "debug": "^4.3.4",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.288.0",
+    "postcss": "^8",
+    "prettier": "^3.0.3",
+    "react-hook-form": "^7.47.0",
+    "react-hot-toast": "^2.4.1",
+    "react-spinners": "^0.13.8",
+    "sass": "^1.69.4",
+    "supports-color": "^9.4.0",
+    "tailwind-variants": "^0.1.16",
+    "tailwindcss": "^3",
+    "typescript": "^5",
+    "valtio": "^1.11.3",
+    "yup": "^1.3.2"
+  },
+  "packageManager": "yarn@4.0.0"
+}
