@@ -5,6 +5,7 @@ import { useSnapshot } from 'valtio';
 import { Avatar } from '@/components/core/avatar';
 import { Discipline } from '@/components/core/discipline';
 import { proxyAuthState } from '@/store/auth.state';
+import { logoutService } from '@/services/auth.services';
 
 import { styles } from './styles';
 import { disciplines } from './data';
@@ -28,7 +29,9 @@ const Index = () => {
             <p className={style.description()}>Boa noite</p>
           </div>
 
-          <Avatar avatar={'/assets/svgs/' + user.avatar + '.svg'} />
+          <div onClick={() => logoutService()}>
+            <Avatar avatar={'/assets/svgs/' + user.avatar + '.svg'} />
+          </div>
         </header>
 
         <span className={style.helper()}>Selecione um Quiz</span>
